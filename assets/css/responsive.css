@@ -2,72 +2,65 @@
   .center-block {
     width: 85%;
   }
-  .skill-block {
-    padding: 10px !important;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .skill-block {
-    padding: 10px !important;
+  #skill-blocks .skill-block {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 1286px) {
   #skill-blocks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around !important;
+    justify-content: space-around;
   }
   #skill-blocks .skill-block {
     width: 26%;
     display: flex;
-    align-items: center !important;
     flex-direction: column;
     margin-bottom: 15px;
   }
-  #services .service-block h3 {
-    font-size: 18px !important;
+  #services #service-blocks .service-block h3 {
+    font-size: 18px;
   }
-  #services .service-block p {
-    font-size: 15px !important;
+  #services #service-blocks .service-block p {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 1024px) {
+  #about-blocks #photo {
+    height: 350px;
+  }
+  #about-blocks .abt {
+    font-size: 16px;
+  }
+  #about-blocks #info .info1 h2 {
+    font-size: 18px;
+  }
+  #about-blocks #info .info1 p {
+    font-size: 16px;
+  }
   .paragraph2 {
-    width: 43% !important;
+    width: 43%;
   }
   .paragraph2 p {
-    font-size: 17px !important;
-  }
-  .icon {
-    width: 90px !important;
-    height: 90px !important;
+    font-size: 17px;
   }
   #text {
     padding-bottom: 20px;
   }
-  #text .paragraph p {
-    font-size: 16px !important;
-  }
-  #text .info1 p {
-    font-size: 16px !important;
-  }
-  #text .info1 h2 {
-    font-size: 18px !important;
-  }
-  .center-block {
+  #text .center-block {
     width: 95%;
   }
-  header nav li {
+  #text header nav li {
     font-size: 19px;
   }
-  #naslov {
-    font-size: 1.5rem !important;
+  #text #bg-image #naslov {
+    font-size: 1.5rem;
   }
-  #bg-image {
+  #text #bg-image {
     background-position: right;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   header {
     display: flex;
     flex-direction: column;
@@ -76,64 +69,60 @@
     width: 100%;
     text-align: center;
   }
-  #naslov {
-    font-size: 1.4rem !important;
-  }
   #bg-image {
-    height: 80vh !important;
+    height: 80vh;
     background-position: right;
-    -webkit-clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 111% 103%, 75% 93%, 49% 98%, 24% 94%, -12% 103%, 0% 35%, -21% -19%) !important;
-            clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 111% 103%, 75% 93%, 49% 98%, 24% 94%, -12% 103%, 0% 35%, -21% -19%) !important;
+    -webkit-clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 111% 103%, 75% 93%, 49% 98%, 24% 94%, -12% 103%, 0% 35%, -21% -19%);
+            clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 111% 103%, 75% 93%, 49% 98%, 24% 94%, -12% 103%, 0% 35%, -21% -19%);
   }
-  #about-blocks {
-    flex-direction: column !important;
-    height: auto !important;
+  #bg-image #naslov {
+    font-size: 1.4rem;
   }
-  #about-blocks #text {
-    width: 95% !important;
-    margin-left: 0px !important;
+  #about #about-blocks {
+    flex-direction: column;
+    height: auto;
   }
-  #about-blocks #photo {
-    height: 300px !important;
-    rotate: 0deg !important;
+  #about #about-blocks #text {
+    width: 95%;
+    margin-left: 0px;
+  }
+  #about #about-blocks #photo {
+    height: 300px;
+    rotate: 0deg;
     padding-top: 10px;
   }
-  #about-blocks #icon-author {
+  #about #about-blocks #icon-author {
     display: none;
+  }
+  #services .service-block {
+    padding: 2 rem 0;
+    width: 45%;
+  }
+  #services .service-block:first-child, #services .service-block:nth-child(2), #services .service-block:nth-child(3) {
+    margin-bottom: 2rem;
   }
   #service-blocks {
     display: flex;
     flex-wrap: wrap;
     margin: 0px auto;
-    width: 100% !important;
-  }
-  #service-blocks .service-block {
-    padding: 2 rem 0;
-    width: 45% !important;
-  }
-  #service-blocks .service-block:first-child, #service-blocks .service-block:nth-child(2), #service-blocks .service-block:nth-child(3) {
-    margin-bottom: 2rem;
   }
   #service-blocks .line2 {
-    display: none !important;
+    display: none;
   }
   .paragraph2 {
-    width: 50% !important;
+    width: 70%;
   }
-  .project-blocks {
-    flex-direction: column !important;
-  }
-  .project-blocks .project {
-    width: 70% !important;
+  #projects .project-blocks .project {
+    width: 80%;
     margin: 1.3rem auto;
   }
   .center-block {
-    width: 100%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 610px) {
-  .skill-block {
-    width: 40% !important;
+  #skill-blocks .skill-block {
+    width: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -152,9 +141,16 @@
   }
   #bg-image #naslov {
     margin-top: 100px;
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
   .main-title {
     font-size: 25px !important;
+  }
+  .center-block {
+    width: 100%;
+  }
+  #projects .project-blocks .project {
+    width: 80%;
+    margin: 1.3rem auto;
   }
 }/*# sourceMappingURL=responsive.css.map */

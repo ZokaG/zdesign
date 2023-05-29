@@ -65,11 +65,10 @@ header nav li {
 header nav a {
   display: block;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 header nav a:hover {
   color: #fba7b5;
-  text-decoration: underline;
 }
 
 .text-color {
@@ -135,7 +134,8 @@ header nav a:hover {
 #about {
   margin-top: 100px;
 }
-#about #about-blocks {
+
+#about-blocks {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +143,7 @@ header nav a:hover {
   height: 500px;
   background-color: rgba(185, 134, 143, 0.1215686275);
 }
-#about #about-blocks #icon-author {
+#about-blocks #icon-author {
   position: relative;
   right: -40px;
   top: -190px;
@@ -151,33 +151,33 @@ header nav a:hover {
   z-index: 1;
   color: #b9868f;
 }
-#about #about-blocks #photo {
+#about-blocks #photo {
   height: 360px;
   display: flex;
   rotate: 6deg;
 }
-#about #about-blocks #photo img {
+#about-blocks #photo img {
   height: 100%;
   border-radius: 5%;
 }
-#about #about-blocks #text {
+#about-blocks #text {
   margin-left: 7%;
   width: 55%;
 }
-#about #about-blocks #text #info {
+#about-blocks #info {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-#about #about-blocks #text #info .info1 {
+#about-blocks #info .info1 {
   width: 45%;
   text-align: center;
 }
-#about #about-blocks #text #info .info1 p {
+#about-blocks #info .info1 p {
   font-size: 18px;
 }
-#about #about-blocks #text #info .info1 h2 {
+#about-blocks #info .info1 h2 {
   font-size: 20px;
   font-weight: bold;
   font-style: italic;
@@ -248,27 +248,28 @@ header nav a:hover {
 #skills {
   margin-top: 160px;
 }
-#skills #skill-blocks {
+
+#skill-blocks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 80px;
   width: 100%;
 }
-#skills #skill-blocks .skill-title {
+#skill-blocks .skill-title {
   margin: 1rem 0 0.5rem 0;
   letter-spacing: 0.1rem;
   text-align: center;
 }
-#skills #skill-blocks .skill-block {
+#skill-blocks .skill-block {
   background-color: rgba(185, 134, 143, 0.1215686275);
   padding: 20px;
   border-radius: 5%;
   display: flex;
-  align-items: center !important;
+  align-items: center;
   flex-direction: column;
 }
-#skills #skill-blocks .skill-block .skill-frame {
+#skill-blocks .skill-block .skill-frame {
   position: relative;
   height: 150px;
   width: 150px;
@@ -278,7 +279,7 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
 }
-#skills #skill-blocks .skill-block .percent1, #skills #skill-blocks .skill-block .percent5, #skills #skill-blocks .skill-block .percent4, #skills #skill-blocks .skill-block .percent3, #skills #skill-blocks .skill-block .percent2 {
+#skill-blocks .skill-block .percent1, #skill-blocks .skill-block .percent5, #skill-blocks .skill-block .percent4, #skill-blocks .skill-block .percent3, #skill-blocks .skill-block .percent2 {
   height: 135px;
   width: 135px;
   background-color: #fba7b5;
@@ -288,19 +289,19 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
 }
-#skills #skill-blocks .skill-block .percent2 {
+#skill-blocks .skill-block .percent2 {
   height: 125px;
   width: 125px;
 }
-#skills #skill-blocks .skill-block .percent3 {
+#skill-blocks .skill-block .percent3 {
   height: 120px;
   width: 120px;
 }
-#skills #skill-blocks .skill-block .percent4 {
+#skill-blocks .skill-block .percent4 {
   height: 75px;
   width: 75px;
 }
-#skills #skill-blocks .skill-block .percent5 {
+#skill-blocks .skill-block .percent5 {
   height: 95px;
   width: 95px;
 }
@@ -324,7 +325,7 @@ header nav a:hover {
   flex-wrap: wrap;
 }
 #projects .project-blocks .project {
-  width: 45%;
+  width: 48%;
   height: 100%;
 }
 #projects .project-blocks .project .text-block {
@@ -395,10 +396,32 @@ header nav a:hover {
 }
 
 footer {
-  height: 50px;
   background-color: rgba(185, 134, 143, 0.1215686275);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  flex-direction: column;
+}
+footer #soc-icons {
+  margin-bottom: 7px;
+}
+footer #soc-icons li {
+  display: inline;
+}
+footer #soc-icons i {
+  color: #000;
+}
+footer .padding-right {
+  padding-right: 10px;
+  font-size: 20px;
+}
+footer li {
+  transition: all 0.5s ease-in-out 0s;
+}
+footer li i:hover {
+  font-size: 22px;
+  color: #fff;
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out 0s;
 }/*# sourceMappingURL=style.css.map */

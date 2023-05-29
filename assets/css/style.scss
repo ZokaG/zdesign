@@ -82,11 +82,10 @@ header{
         a{
           display: block;
           text-decoration: none;
-          transition: all .3s ease-in-out;
+          transition: all .4s ease-in-out;
         }
         a:hover{
             color:$pink;
-            text-decoration:underline;
           }
           
       } 
@@ -146,7 +145,7 @@ header{
     }
 }
 #about{
-    margin-top: 100px;
+    margin-top: 100px;}
 #about-blocks{
     @include flex-c;
     flex-direction: row;
@@ -172,7 +171,7 @@ header{
     }
     #text{
         margin-left: 7%;
-        width: 55%;
+        width: 55%;}
 
         #info{
             width: 100%;
@@ -194,9 +193,9 @@ header{
             }
             
         }
-    }
+    
 }
-}
+
 
 #line{
     width: 3px;
@@ -259,7 +258,7 @@ p{
 }
 }
 #skills{
-    margin-top:160px;
+    margin-top:160px;}
     #skill-blocks{
         @include flex;
         margin-top: 80px;
@@ -275,7 +274,7 @@ p{
         padding: 20px;
         border-radius: 5%;
         display: flex;
-        align-items: center!important;
+        align-items: center;
         flex-direction: column;
         .skill-frame{
             position: relative;
@@ -315,7 +314,7 @@ p{
         }
     }
 }
-}
+
 .paragraph2{
     width: 35%;
     @extend .paragraph;
@@ -331,7 +330,7 @@ p{
         justify-content: space-around;
         flex-wrap: wrap;
     .project{
-        width: 45%;
+        width: 48%;
        height: 100%;
        
        .text-block{
@@ -411,8 +410,27 @@ p{
     }
 }
 footer{
-    height: 50px;
     background-color: #b9868f1f;
     @include flex-c;
     margin-top: 100px;
+    flex-direction: column;
+    #soc-icons{
+        margin-bottom: 7px;
+        li{display: inline;}
+        i{
+            color: #000;
+        }
+    }
+    .padding-right{
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    li{
+        transition: all 0.5s ease-in-out 0s;
+        i:hover{
+        font-size: 22px;
+        color:$white;
+        transform: rotate(360deg);
+        transition: all 0.5s ease-in-out 0s;}
+    }
 }
