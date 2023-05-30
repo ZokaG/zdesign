@@ -184,8 +184,8 @@ header nav a:hover {
   margin: 10px 0px;
 }
 
-#line, .line2 {
-  width: 3px;
+.line, .line2 {
+  width: 4px;
   margin-top: 2%;
   background-color: #b9868f;
 }

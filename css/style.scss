@@ -193,13 +193,13 @@ header{
 }
 
 
-#line{
-    width: 3px;
+.line{
+    width: 4px;
     margin-top: 2%;
     background-color: $darkPink;
 }
 .line2{
-    @extend #line;
+    @extend .line;
     height:100px;
 }
 .main-title{
