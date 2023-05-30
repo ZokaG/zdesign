@@ -171,7 +171,7 @@ header nav a:hover {
   justify-content: space-between;
 }
 #about-blocks #info .info1 {
-  width: 45%;
+  width: 50%;
   text-align: center;
 }
 #about-blocks #info .info1 p {
@@ -396,6 +396,7 @@ header nav a:hover {
 }
 
 footer {
+  height: 100px;
   background-color: rgba(185, 134, 143, 0.1215686275);
   display: flex;
   align-items: center;
@@ -411,6 +412,7 @@ footer #soc-icons li {
 }
 footer #soc-icons i {
   color: #000;
+  font-size: 25px;
 }
 footer .padding-right {
   padding-right: 10px;
@@ -420,8 +422,6 @@ footer li {
   transition: all 0.5s ease-in-out 0s;
 }
 footer li i:hover {
-  font-size: 22px;
-  color: #fff;
   transform: rotate(360deg);
   transition: all 0.5s ease-in-out 0s;
 }/*# sourceMappingURL=style.css.map */
