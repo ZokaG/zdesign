@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(255, 192, 203, 0.1882352941);
+  font-family: "Nunito Sans", sans-serif;
+  animation: fadeIn 2s;
+}
+
+a {
+  color: #fff;
+}
+
+.cleaner {
+  clear: both;
+}
+
+.center-block {
+  width: 76%;
+  margin: 0px auto;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 11px 0px;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+header #logo {
+  float: left;
+}
+header #logo i {
+  font-size: 35px;
+  padding: 10px;
+  border: 1px dashed #fff;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  padding-top: 10px;
+}
+header nav li {
+  display: inline-block;
+  font-size: 21px;
+  padding-left: 18px;
+}
+header nav a {
+  display: block;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+header nav a:hover {
+  color: #fba7b5;
+}
+
+.text-color {
+  color: #fba7b5;
+}
+
+.text-color2 {
+  color: #b9868f;
+  font-weight: bold;
+}
+
+#bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cover.jpg);
+  -webkit-clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 106% 103%, 75% 88%, 49% 98%, 24% 89%, -14% 106%, 0% 35%, -21% -19%);
+          clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 106% 103%, 75% 88%, 49% 98%, 24% 89%, -14% 106%, 0% 35%, -21% -19%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bg-image #naslov {
+  color: #fff;
+  width: 75%;
+  font-size: 1.7rem;
+}
+#bg-image #naslov #btn {
+  margin-top: 30px;
+}
+#bg-image #naslov #btn a {
+  border: 1px solid #fff;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+#bg-image #naslov #btn a:hover {
+  border-color: #fba7b5;
+  transition: all 0.3s ease-in-out;
+}
+
+#reg-abt {
+  margin-top: 160px;
+}
+
+.paragraph, .paragraph2 {
+  width: 100%;
+  margin: 1.3rem auto;
+  text-align: center;
+  font-style: italic;
+}
+.paragraph h3, .paragraph2 h3 {
+  font-size: 21px;
+}
+.paragraph p, .paragraph2 p {
+  font-size: 18px;
+}
+.paragraph .abt, .paragraph2 .abt {
+  padding: 8px 0px;
+}
+
+#about {
+  margin-top: 100px;
+}
+
+#about-blocks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 500px;
+  background-color: rgba(185, 134, 143, 0.1215686275);
+}
+#about-blocks #icon-author {
+  position: relative;
+  right: -40px;
+  top: -190px;
+  font-size: 25px;
+  z-index: 1;
+  color: #b9868f;
+}
+#about-blocks #photo {
+  height: 360px;
+  display: flex;
+  rotate: 6deg;
+}
+#about-blocks #photo img {
+  height: 100%;
+  border-radius: 5%;
+}
+#about-blocks #text {
+  margin-left: 7%;
+  width: 55%;
+}
+#about-blocks #info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#about-blocks #info .info1 {
+  width: 50%;
+  text-align: center;
+}
+#about-blocks #info .info1 p {
+  font-size: 18px;
+}
+#about-blocks #info .info1 h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px 0px;
+}
+
+#line, .line2 {
+  width: 3px;
+  margin-top: 2%;
+  background-color: #b9868f;
+}
+
+.line2 {
+  height: 100px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.main-title h2 {
+  font-weight: 400;
+}
+
+#services {
+  margin-top: 160px;
+}
+#services #service-blocks {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-around;
+}
+#services .service-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+}
+#services .service-block h3 {
+  padding: 10px 0px;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#services .service-block .icon {
+  width: 100px;
+  height: 100px;
+}
+#services .service-block .icon i {
+  background-color: #b9868f;
+  border-radius: 10%;
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+}
+#services .service-block p {
+  text-align: center;
+  font-size: 17px;
+}
+
+#skills {
+  margin-top: 160px;
+}
+
+#skill-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 100%;
+}
+#skill-blocks .skill-title {
+  margin: 1rem 0 0.5rem 0;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+#skill-blocks .skill-block {
+  background-color: rgba(185, 134, 143, 0.1215686275);
+  padding: 20px;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+}
+#skill-blocks .skill-block:hover {
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+#skill-blocks .skill-block .skill-frame {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #b9868f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percent1, .percent5, .percent4, .percent3, .percent2 {
+  height: 135px;
+  width: 135px;
+  background-color: #fba7b5;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percent2 {
+  height: 125px;
+  width: 125px;
+}
+
+.percent3 {
+  height: 120px;
+  width: 120px;
+}
+
+.percent4 {
+  height: 75px;
+  width: 75px;
+}
+
+.percent5 {
+  height: 95px;
+  width: 95px;
+}
+
+.icon i {
+  transition: 0.3s ease-in-out;
+}
+.icon i:hover {
+  box-shadow: 1px 1px 30px #b9868f;
+  transition: 0.3s ease-in-out;
+}
+
+.paragraph2 {
+  width: 35%;
+}
+.paragraph2 i {
+  color: #b9868f;
+}
+
+#projects {
+  margin-top: 160px;
+}
+#projects .project-blocks {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#projects .project-blocks .project {
+  width: 48%;
+  height: 100%;
+}
+#projects .project-blocks .project .text-block {
+  text-align: center;
+  padding: 10px 0px;
+}
+#projects .project-blocks .project img {
+  width: 100%;
+  height: 100%;
+  background-color: #b9868f;
+  border: 2px solid #b9868f;
+  transition: 0.3s ease-in-out;
+}
+#projects .project-blocks .project img:hover {
+  box-shadow: 1px 1px 30px #b9868f;
+  transition: 0.3s ease-in-out;
+}
+
+#contact {
+  margin-top: 160px;
+  width: 100%;
+}
+#contact #contactForm {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: rgba(185, 134, 143, 0.1215686275);
+  padding: 20px;
+  border-radius: 10px;
+}
+#contact #contactForm #button:hover {
+  background-color: #b9868f;
+  color: #fff;
+  border-radius: 15px;
+}
+#contact #contactForm .formRow {
+  display: block;
+  width: 100%;
+  margin: 2rem 0;
+  text-align: center;
+}
+#contact #contactForm .formRow #button {
+  letter-spacing: 0.1rem;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#contact #contactForm .formRow #tb2 {
+  margin-left: 5%;
+}
+#contact #contactForm .formRow #tb1, #contact #contactForm .formRow #tb2 {
+  width: 37.5%;
+}
+#contact #contactForm .formRow #tb1, #contact #contactForm .formRow #tb2, #contact #contactForm .formRow #tb3, #contact #contactForm .formRow #tb5 {
+  padding: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  border: none;
+  border-radius: 15px;
+}
+#contact #contactForm .formRow #tb3 {
+  width: 80%;
+}
+#contact #contactForm textarea {
+  width: 80%;
+  height: 10rem;
+  padding: 1rem;
+}
+
+footer {
+  height: 100px;
+  background-color: rgba(185, 134, 143, 0.1215686275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  flex-direction: column;
+}
+footer #soc-icons {
+  margin-bottom: 7px;
+}
+footer #soc-icons li {
+  display: inline;
+}
+footer #soc-icons i {
+  color: #000;
+  font-size: 25px;
+}
+footer .padding-right {
+  padding-right: 10px;
+  font-size: 20px;
+}
+footer li {
+  transition: all 0.5s ease-in-out 0s;
+}
+footer li i:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out 0s;
+}/*# sourceMappingURL=style.css.map */
