@@ -59,7 +59,6 @@ header{
 
     #logo{
         float: left;
-
         i{
             font-size: 35px;
             padding: 10px;
@@ -273,6 +272,11 @@ p{
         display: flex;
         align-items: center;
         flex-direction: column;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+        }
         .skill-frame{
             position: relative;
             height: 150px;
@@ -281,6 +285,10 @@ p{
             border-radius: 50%;
             @include flex-c;
         }
+        
+        }
+
+    }
         .percent1{
             height: 135px;
             width: 135px;
@@ -309,9 +317,16 @@ p{
             width: 95px;
             @extend .percent1;
         }
-    }
-}
-
+    
+.icon{
+    i{
+    transition: 0.3s ease-in-out;
+        &:hover{
+                    box-shadow: 1px 1px 30px $darkPink;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
 .paragraph2{
     width: 35%;
     @extend .paragraph;
