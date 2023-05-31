@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: rgba(255, 192, 203, 0.1882352941);
+  background-color: rgba(255, 192, 203, 0);
   font-family: "Nunito Sans", sans-serif;
   animation: fadeIn 2s;
 }
