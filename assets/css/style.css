@@ -22,6 +22,15 @@ body {
   animation: fadeIn 2s;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(185, 134, 143, 0.4196078431);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b9868f;
+}
+
 a {
   color: #fff;
 }
@@ -69,6 +78,7 @@ header nav a {
 }
 header nav a:hover {
   color: #fba7b5;
+  transition: all 0.4s ease-in-out;
 }
 
 .text-color {

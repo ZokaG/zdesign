@@ -40,6 +40,14 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     animation: fadeIn 2s;
 }
+body::-webkit-scrollbar {
+    width:12px;
+    background-color:#b9868f6b; 
+}
+body::-webkit-scrollbar-thumb{
+   background-color:$darkPink; 
+
+}
 a{
     color:$white;
 }
@@ -84,6 +92,7 @@ header{
         }
         a:hover{
             color:$pink;
+            transition: all .4s ease-in-out;
           }
           
       } 
@@ -415,10 +424,8 @@ p{
         textarea{
             width: 80%;
             height: 10rem;
-            padding: 1rem;
-            
-        }
-        
+            padding: 1rem;       
+        }      
     }
 }
 footer{
